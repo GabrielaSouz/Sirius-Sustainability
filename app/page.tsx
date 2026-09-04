@@ -56,16 +56,16 @@ export default function Page() {
     <div className="min-h-screen bg-slate-50 text-slate-900">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b border-emerald-100 bg-white/90 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-2 font-bold text-xl tracking-tight text-emerald-950">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-white font-black text-sm">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
+          <div className="flex items-center gap-2 font-bold text-lg tracking-tight text-emerald-950 sm:text-xl">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-600 text-white font-black text-xs sm:h-8 sm:w-8 sm:text-sm">
               S
             </span>
-            {/* <img src="/sirius-logo.png" alt="Sirius Sustainability" className="h-10 w-10 object-cover" /> */}
-            Sirius<span className="text-emerald-600">Sustainability</span>
+            <span className="hidden sm:inline">Sirius<span className="text-emerald-600">Sustainability</span></span>
+            <span className="sm:hidden">Sirius</span>
           </div>
 
-          <nav className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+          <nav className="hidden md:flex gap-6 text-xs font-medium text-slate-600 lg:gap-8 lg:text-sm">
             <a href="#servicos" className="transition-colors hover:text-emerald-600">
               Certificações
             </a>
@@ -83,14 +83,14 @@ export default function Page() {
             </a>
           </nav>
 
-          <Button className="rounded-full bg-emerald-600 px-6 py-2 text-xs font-semibold text-white shadow-md shadow-emerald-600/20 transition-all hover:bg-emerald-700">
+          <Button className="hidden rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white shadow-md shadow-emerald-600/20 transition-all hover:bg-emerald-700 sm:block sm:px-6">
             Falar com Consultor
           </Button>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-[680px] overflow-hidden border-b border-emerald-900/10 bg-emerald-950 px-6 py-24 text-white md:px-8 md:py-32">
+      <section className="relative min-h-[600px] overflow-hidden border-b border-emerald-900/10 bg-emerald-950 px-4 py-16 text-white sm:px-6 sm:py-20 md:px-8 md:py-28 lg:min-h-[680px] lg:py-32">
         {/* Glows de fundo sustentáveis */}
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-500/10 blur-3xl" />
@@ -106,46 +106,46 @@ export default function Page() {
           </div>
 
           {/* Title */}
-          <h1 className="max-w-4xl text-4xl font-extrabold uppercase leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-4xl text-2xl font-extrabold uppercase leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Acelere a transformação <br />
             <span className="text-emerald-400">sustentável do seu negócio.</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-8 max-w-2xl text-base leading-relaxed text-emerald-100/80 md:text-lg">
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-emerald-100/80 sm:mt-8 sm:text-base md:text-lg">
             Guiamos sua empresa na jornada rumo às principais certificações ambientais e sociais do mercado global, incluindo Sistema B, ISO 14001 e métricas ESG.
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <button className="rounded-full bg-emerald-500 px-8 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 transition-all hover:bg-emerald-400">
+          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
+            <button className="rounded-full bg-emerald-500 px-6 py-3 text-xs font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 transition-all hover:bg-emerald-400 sm:px-8 sm:py-4 sm:text-sm">
               Obter Certificação B
             </button>
 
-            <button className="rounded-full border border-emerald-700/60 bg-emerald-900/40 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-emerald-500 hover:bg-emerald-800/50">
+            <button className="rounded-full border border-emerald-700/60 bg-emerald-900/40 px-6 py-3 text-xs font-semibold text-white transition-all hover:border-emerald-500 hover:bg-emerald-800/50 sm:px-8 sm:py-4 sm:text-sm">
               Conhecer Nossas Soluções
             </button>
           </div>
 
           {/* Impact Stats */}
-          <div className="mt-20 grid w-full max-w-3xl grid-cols-3 divide-x divide-emerald-800/60 border-y border-emerald-800/60 py-6">
-            <div className="px-4 text-center">
-              <p className="text-2xl font-bold text-emerald-400 md:text-3xl">100%</p>
-              <p className="mt-1 text-[11px] uppercase tracking-wider text-emerald-200/70">
+          <div className="mt-12 grid w-full max-w-3xl grid-cols-3 divide-x divide-emerald-800/60 border-y border-emerald-800/60 py-4 sm:mt-16 sm:py-6 md:mt-20">
+            <div className="px-2 text-center sm:px-4">
+              <p className="text-xl font-bold text-emerald-400 sm:text-2xl md:text-3xl">100%</p>
+              <p className="mt-1 text-[10px] uppercase tracking-wider text-emerald-200/70 sm:text-[11px]">
                 Aprovação em Auditorias
               </p>
             </div>
 
-            <div className="px-4 text-center">
-              <p className="text-2xl font-bold text-emerald-400 md:text-3xl">B Lab</p>
-              <p className="mt-1 text-[11px] uppercase tracking-wider text-emerald-200/70">
+            <div className="px-2 text-center sm:px-4">
+              <p className="text-xl font-bold text-emerald-400 sm:text-2xl md:text-3xl">B Lab</p>
+              <p className="mt-1 text-[10px] uppercase tracking-wider text-emerald-200/70 sm:text-[11px]">
                 Especialistas Treinados
               </p>
             </div>
 
-            <div className="px-4 text-center">
-              <p className="text-2xl font-bold text-emerald-400 md:text-3xl">+50kt</p>
-              <p className="mt-1 text-[11px] uppercase tracking-wider text-emerald-200/70">
+            <div className="px-2 text-center sm:px-4">
+              <p className="text-xl font-bold text-emerald-400 sm:text-2xl md:text-3xl">+50kt</p>
+              <p className="mt-1 text-[10px] uppercase tracking-wider text-emerald-200/70 sm:text-[11px]">
                 CO2 Compensado
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function Page() {
       </section>
 
     {/* Services */}
-<section id="servicos" className="overflow-hidden border-b border-slate-200 bg-white px-6 py-20 md:px-8 md:py-28">
+<section id="servicos" className="overflow-hidden border-b border-slate-200 bg-white px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:py-28">
   <div className="mx-auto max-w-7xl">
     {/* Header */}
     <div className="mb-16 max-w-2xl">
@@ -162,7 +162,7 @@ export default function Page() {
         <span className="h-px w-8 bg-emerald-600" />
         Nossa Expertise
       </span>
-      <h2 className="text-3xl font-bold leading-tight tracking-tight text-slate-900 md:text-5xl">
+      <h2 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
         Soluções completas para sua jornada sustentável
       </h2>
       <p className="mt-4 text-base text-slate-600 md:text-lg">
@@ -171,81 +171,81 @@ export default function Page() {
     </div>
 
     {/* Services Grid */}
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {/* 1. Certificação Sistema B */}
-      <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white">
-          <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 sm:rounded-3xl sm:p-8">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white sm:mb-6 sm:h-14 sm:w-14 sm:rounded-2xl">
+          <svg className="h-6 w-6 sm:h-7 sm:w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-slate-900">Certificação B Lab</h3>
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <h3 className="text-lg font-bold text-slate-900 sm:text-xl">Certificação B Lab</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:mt-3">
           Orientação no Avaliação de Impacto B (BIA), adequação societária e melhoria contínua para obter o selo de Empresa B.
         </p>
       </div>
 
       {/* 2. Inventário de Carbono */}
-      <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white">
-          <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 sm:rounded-3xl sm:p-8">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white sm:mb-6 sm:h-14 sm:w-14 sm:rounded-2xl">
+          <svg className="h-6 w-6 sm:h-7 sm:w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V11.4M9 20h6M12 4a8 8 0 100 16 8 8 0 000-16z" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-slate-900">Gestão de Carbono</h3>
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <h3 className="text-lg font-bold text-slate-900 sm:text-xl">Gestão de Carbono</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:mt-3">
           Mapeamento dos Escopos 1, 2 e 3 (GHG Protocol), estratégias de redução de emissões e programas de compensação.
         </p>
       </div>
 
       {/* 3. Diagnóstico e Relatórios ESG */}
-      <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white">
-          <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 sm:rounded-3xl sm:p-8">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white sm:mb-6 sm:h-14 sm:w-14 sm:rounded-2xl">
+          <svg className="h-6 w-6 sm:h-7 sm:w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-slate-900">Relatórios ESG (GRI & SASB)</h3>
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <h3 className="text-lg font-bold text-slate-900 sm:text-xl">Relatórios ESG (GRI & SASB)</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:mt-3">
           Elaboração de relatórios de sustentabilidade transparentes e estruturados para investidores e partes interessadas.
         </p>
       </div>
 
       {/* 4. Normas ISO (14001, 5001, etc.) */}
-      <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white">
-          <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 sm:rounded-3xl sm:p-8">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white sm:mb-6 sm:h-14 sm:w-14 sm:rounded-2xl">
+          <svg className="h-6 w-6 sm:h-7 sm:w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-slate-900">Sistemas de Gestão ISO</h3>
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <h3 className="text-lg font-bold text-slate-900 sm:text-xl">Sistemas de Gestão ISO</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:mt-3">
           Preparação e auditoria interna para certificações de Gestão Ambiental (ISO 14001) e Energia (ISO 50001).
         </p>
       </div>
 
       {/* 5. Cadeia de Suprimentos Sustentável */}
-      <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white">
-          <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 sm:rounded-3xl sm:p-8">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white sm:mb-6 sm:h-14 sm:w-14 sm:rounded-2xl">
+          <svg className="h-6 w-6 sm:h-7 sm:w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-slate-900">Cadeia de Suprimentos</h3>
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <h3 className="text-lg font-bold text-slate-900 sm:text-xl">Cadeia de Suprimentos</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:mt-3">
           Avaliação de riscos socioambientais em fornecedores e implementação de políticas de compras responsáveis.
         </p>
       </div>
 
       {/* 6. Treinamento e Cultura ESG */}
-      <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white">
-          <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 sm:rounded-3xl sm:p-8">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-emerald-600 shadow-sm transition-colors group-hover:bg-emerald-600 group-hover:text-white sm:mb-6 sm:h-14 sm:w-14 sm:rounded-2xl">
+          <svg className="h-6 w-6 sm:h-7 sm:w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-slate-900">Treinamento & Governança</h3>
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <h3 className="text-lg font-bold text-slate-900 sm:text-xl">Treinamento & Governança</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:mt-3">
           Capacitação de lideranças e equipes para engajar a cultura corporativa na agenda ESG e de impacto social.
         </p>
       </div>
@@ -255,7 +255,7 @@ export default function Page() {
 
       {/* Workflow */}
 {/* Workflow / Timeline */}
-  <section className="relative overflow-hidden border-b border-emerald-800 bg-emerald-950 px-6 py-20 text-white md:px-8 md:py-28">
+  <section className="relative overflow-hidden border-b border-emerald-800 bg-emerald-950 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-8 md:py-20 lg:py-28">
     {/* Background Pattern */}
     <div className="pointer-events-none absolute inset-0">
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -269,7 +269,7 @@ export default function Page() {
           <span className="h-px w-8 bg-emerald-500" />
           Jornada Completa
         </span>
-        <h2 className="text-4xl font-bold leading-[1.1] tracking-[-0.03em] text-white md:text-5xl">
+        <h2 className="text-2xl font-bold leading-[1.1] tracking-[-0.03em] text-white sm:text-3xl md:text-4xl lg:text-5xl">
           Do diagnóstico ao selo sustentável
         </h2>
         <p className="mt-6 text-base leading-7 text-slate-400 md:text-lg">
@@ -291,7 +291,7 @@ export default function Page() {
                   01
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-white">Mapeamento & Diagnóstico</h3>
+              <h3 className="text-xl font-bold text-white sm:text-2xl">Mapeamento & Diagnóstico</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Avaliamos sua empresa frente aos requisitos das principais certificações (B Corp, ISO 14001, GHG Protocol) para identificar pontos críticos e oportunidades.
               </p>
@@ -320,7 +320,7 @@ export default function Page() {
                   02
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-white">Plano de Transformação</h3>
+              <h3 className="text-xl font-bold text-white sm:text-2xl">Plano de Transformação</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Desenhamos metas claras, adequamos governança e implementamos políticas sustentáveis e medição de emissões adaptadas à sua operação.
               </p>
@@ -337,7 +337,7 @@ export default function Page() {
                   03
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-white">Auditoria & Submissão</h3>
+              <h3 className="text-xl font-bold text-white sm:text-2xl">Auditoria & Submissão</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Acompanhamos todo o processo junto às bancas certificadoras e órgãos reguladores, garantindo conformidade e agilidade na auditoria.
               </p>
@@ -366,7 +366,7 @@ export default function Page() {
                   04
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-white">Certificação & Monitoramento</h3>
+              <h3 className="text-xl font-bold text-white sm:text-2xl">Certificação & Monitoramento</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Com o selo conquistado, estruturamos relatórios transparentes e acompanhamento contínuo para manter sua empresa em evolução.
               </p>
@@ -377,7 +377,7 @@ export default function Page() {
 
       {/* CTA */}
       <div className="mt-16 text-center">
-        <button className="rounded-full bg-emerald-500 px-8 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-400">
+        <button className="rounded-full bg-emerald-500 px-6 py-3 text-xs font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-400 sm:px-8 sm:py-4 sm:text-sm">
           Agendar Reunião Inicial
         </button>
       </div>
@@ -385,16 +385,16 @@ export default function Page() {
   </section>
 
   {/* Sobre Nós */}
-  <section id="sobre" className="overflow-hidden border-b border-slate-200 bg-white px-6 py-20 md:px-8 md:py-28">
+  <section id="sobre" className="overflow-hidden border-b border-slate-200 bg-white px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:py-28">
     <div className="mx-auto max-w-7xl">
-      <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <div className="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
         {/* Content */}
         <div>
           <span className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">
             <span className="h-px w-8 bg-emerald-600" />
             Sobre Nós
           </span>
-          <h2 className="text-4xl font-bold leading-[1.1] tracking-[-0.03em] text-slate-900 md:text-5xl">
+          <h2 className="text-2xl font-bold leading-[1.1] tracking-[-0.03em] text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
             Liderando a transformação sustentável na América Latina
           </h2>
           <p className="mt-6 text-base leading-7 text-slate-600 md:text-lg">
@@ -403,56 +403,56 @@ export default function Page() {
           <p className="mt-4 text-base leading-7 text-slate-600 md:text-lg">
             Nossa equipe é composta por especialistas treinados pelo B Lab, auditores ISO certificados e consultores com vasta experiência em implementação de sistemas de gestão ambiental e social.
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-              <p className="text-3xl font-bold text-emerald-600">+150</p>
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:mt-8 sm:gap-6">
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 sm:rounded-2xl sm:p-6">
+              <p className="text-2xl font-bold text-emerald-600 sm:text-3xl">+150</p>
               <p className="mt-2 text-sm text-slate-600">Empresas Certificadas</p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-              <p className="text-3xl font-bold text-emerald-600">4+</p>
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 sm:rounded-2xl sm:p-6">
+              <p className="text-2xl font-bold text-emerald-600 sm:text-3xl">4+</p>
               <p className="mt-2 text-sm text-slate-600">Anos de Experiência</p>
             </div>
           </div>
         </div>
         {/* Image/Visual */}
         <div className="relative">
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-emerald-50 to-emerald-100 p-12">
-            <div className="grid grid-cols-2 gap-6">
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
-                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 sm:rounded-3xl sm:p-8 lg:p-12">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
+              <div className="rounded-xl bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900">B Lab Certified</h3>
-                <p className="mt-2 text-sm text-slate-600">Consultoria oficial credenciada</p>
+                <h3 className="text-sm font-bold text-slate-900 sm:text-base lg:text-lg">B Lab Certified</h3>
+                <p className="mt-1 text-xs text-slate-600 sm:mt-2 sm:text-sm">Consultoria oficial credenciada</p>
               </div>
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
-                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="rounded-xl bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900">ISO Experts</h3>
-                <p className="mt-2 text-sm text-slate-600">Auditores certificados</p>
+                <h3 className="text-sm font-bold text-slate-900 sm:text-base lg:text-lg">ISO Experts</h3>
+                <p className="mt-1 text-xs text-slate-600 sm:mt-2 sm:text-sm">Auditores certificados</p>
               </div>
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
-                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="rounded-xl bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V11.4M9 20h6M12 4a8 8 0 100 16 8 8 0 000-16z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900">GHG Protocol</h3>
-                <p className="mt-2 text-sm text-slate-600">Inventário de carbono</p>
+                <h3 className="text-sm font-bold text-slate-900 sm:text-base lg:text-lg">GHG Protocol</h3>
+                <p className="mt-1 text-xs text-slate-600 sm:mt-2 sm:text-sm">Inventário de carbono</p>
               </div>
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
-                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="rounded-xl bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900">ESG Reporting</h3>
-                <p className="mt-2 text-sm text-slate-600">GRI & SASB standards</p>
+                <h3 className="text-sm font-bold text-slate-900 sm:text-base lg:text-lg">ESG Reporting</h3>
+                <p className="mt-1 text-xs text-slate-600 sm:mt-2 sm:text-sm">GRI & SASB standards</p>
               </div>
             </div>
           </div>
@@ -462,7 +462,7 @@ export default function Page() {
   </section>
 
   {/* Depoimentos / Social Proof */}
-  <section id="depoimentos" className="overflow-hidden border-b border-slate-200 bg-white px-6 py-20 md:px-8 md:py-28">
+  <section id="depoimentos" className="overflow-hidden border-b border-slate-200 bg-white px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:py-28">
     <div className="mx-auto max-w-7xl">
       {/* Header */}
       <div className="mb-8 text-center">
@@ -470,7 +470,7 @@ export default function Page() {
           <span className="h-px w-8 bg-emerald-600" />
           Depoimentos
         </span>
-        <h2 className="text-4xl font-bold leading-[1.1] tracking-[-0.03em] text-slate-900 md:text-6xl">
+        <h2 className="text-2xl font-bold leading-[1.1] tracking-[-0.03em] text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           Reconhecido por líderes do setor
         </h2>
         <p className="mt-4 text-lg text-slate-600">
@@ -518,21 +518,21 @@ export default function Page() {
         </button>
 
         {/* Cards */}
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-4 md:gap-6 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.slice(currentIndex, currentIndex + 3).map((testimonial, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden rounded-2xl border bg-slate-50 p-6 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 ${
+              className={`relative overflow-hidden rounded-xl border bg-slate-50 p-4 transition-all hover:bg-white hover:shadow-xl hover:shadow-emerald-950/5 sm:rounded-2xl sm:p-6 ${
                 index === 1 ? 'border-emerald-500 shadow-lg shadow-emerald-500/10' : 'border-slate-200'
               }`}
             >
               {/* Quote */}
-              <blockquote className="mb-6 text-lg leading-relaxed text-slate-700">
+              <blockquote className="mb-4 text-base leading-relaxed text-slate-700 sm:mb-6 sm:text-lg">
                 "{testimonial.quote}"
               </blockquote>
 
               {/* View Case / Info */}
-              <div className="mb-6 flex items-center gap-2 text-xs font-semibold text-slate-500">
+              <div className="mb-4 flex items-center gap-2 text-xs font-semibold text-slate-500 sm:mb-6">
                 <span>CASO DE SUCESSO</span>
                 <span>•</span>
                 <span>{testimonial.time}</span>
@@ -540,7 +540,7 @@ export default function Page() {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-sm font-semibold text-slate-700 shadow-sm">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-xs font-semibold text-slate-700 shadow-sm sm:h-10 sm:w-10 sm:text-sm">
                   {testimonial.avatar}
                 </div>
                 <div>
@@ -558,7 +558,7 @@ export default function Page() {
   
 
   {/* Contato */}
-  <section id="contato" className="overflow-hidden border-b border-slate-200 bg-white px-6 py-20 md:px-8 md:py-28">
+  <section id="contato" className="overflow-hidden border-b border-slate-200 bg-white px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:py-28">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-16 max-w-2xl">
@@ -566,7 +566,7 @@ export default function Page() {
             <span className="h-px w-8 bg-emerald-600" />
             Contato
           </span>
-          <h2 className="text-4xl font-bold leading-[1.1] tracking-[-0.03em] text-slate-900 md:text-5xl">
+          <h2 className="text-2xl font-bold leading-[1.1] tracking-[-0.03em] text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
             Entre em contato
           </h2>
           <p className="mt-6 text-base leading-7 text-slate-600 md:text-lg">
@@ -576,7 +576,7 @@ export default function Page() {
         </div>
 
         {/* Split Layout */}
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-8 lg:gap-12 lg:grid-cols-2">
           {/* Form */}
           <div>
             <form className="space-y-6">
@@ -648,7 +648,7 @@ export default function Page() {
 
               <button
                 type="submit"
-                className="w-full rounded-xl bg-emerald-600 px-6 py-4 text-sm font-semibold text-white shadow-md shadow-emerald-600/20 transition hover:bg-emerald-700"
+                className="w-full rounded-xl bg-emerald-600 px-4 py-3 text-xs font-semibold text-white shadow-md shadow-emerald-600/20 transition hover:bg-emerald-700 sm:px-6 sm:py-4 sm:text-sm"
               >
                 Enviar Mensagem
               </button>
@@ -703,7 +703,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 sm:rounded-2xl sm:p-6">
               <p className="text-sm font-medium text-slate-900">Horário de Atendimento</p>
               <p className="mt-2 text-sm text-slate-600">
                 Segunda - Sexta: 9:00 - 18:00
@@ -717,13 +717,13 @@ export default function Page() {
     
 
       {/* Footer */}
-      <footer className="border-t border-emerald-900/20 bg-emerald-950 py-16 px-8">
+      <footer className="border-t border-emerald-900/20 bg-emerald-950 py-12 px-4 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 md:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-2 lg:gap-12 lg:grid-cols-4">
             {/* Brand */}
-            <div className="md:col-span-1">
-              <div className="flex items-center gap-2 font-bold text-xl tracking-tight text-emerald-50 mb-4">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-white font-black text-sm">
+            <div className="md:col-span-2 lg:col-span-1">
+              <div className="flex items-center gap-2 font-bold text-lg tracking-tight text-emerald-50 mb-3 sm:text-xl sm:mb-4">
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-600 text-white font-black text-xs sm:h-8 sm:w-8 sm:text-sm">
                   S
                 </span>
                 Sirius<span className="text-emerald-400">Sustainability</span>
